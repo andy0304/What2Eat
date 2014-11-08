@@ -3,6 +3,10 @@ Feature: Users can choose to eat out or cook meals at home
     So that I want to figure out what to eat
     I want to choose between eat out and cook meals at home
 
+    Scenario: choose between eat out and cook meals at home
+        Given I'm on the homepage
+        Then I should see Cook at Home button and Eat Out Button
+
     Scenario: Choose to cook at home
         Given I'm on the homepage
         When I choose to cook at home
@@ -12,4 +16,6 @@ Feature: Users can choose to eat out or cook meals at home
     Scenario: Choose to eat out
         Given I'm on the homepage
         When I choose to eat out
-        Then I can select location near where is convenient for me to eat 
+        Then I can select location near where is convenient for me to eat
+
+
