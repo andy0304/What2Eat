@@ -15,44 +15,54 @@ Then(/^I can select maximum amount of calorie I want to intake$/) do
 end
 
 When(/^I choose to eat out$/) do
-  pending # express the regexp above with the code you wish you had
+  click_button('Eat out')
 end
 
 Then(/^I can select location near where is convenient for me to eat$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content("where to eat?")
+  page.should have_button('Search')
+  page.should have_button('Back')
 end
 
+#########################################################
+
 Given(/^I’m on the eat out page$/) do
-  pending # express the regexp above with the code you wish you had
+  visit 'http://localhost:3000/eat_out'
 end
 
 When(/^I type in the valid location near where is convenient for me to eat$/) do
-  pending # express the regexp above with the code you wish you had
+  fill_in 'address', :with => '3827 walnut street'
+  click_button('Search')
 end
 
 Then(/^I can see a list of recommended restaurants which are within (\d+) mile of the location I select$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+  page.should have_content('3827 walnut street')
+  page.should have_xpath('//table/tr')
+  # page.should have_button('Back')
 end
 
 When(/^I type in a location that is not valid$/) do
-  pending # express the regexp above with the code you wish you had
+  fill_in 'address', :with => '9937 walnut street'
+  click_button('Search')
 end
 
 Then(/^I should see an error information telling me no results$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content('9937 walnut street')
+  page.should have_content('Address invalid, no results found')
+  # page.should have_button('Back')
 end
 
 When(/^I don’t type in any location$/) do
-  pending # express the regexp above with the code you wish you had
-end
-
-When(/^I click the Search button$/) do
-  pending # express the regexp above with the code you wish you had
+  fill_in 'address', :with => ''
+  click_button('Search')
 end
 
 Then(/^I should see a message telling me to give the location$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content('Please type the valid address')
+  # page.should have_button('Back')
 end
+
+#########################################################
 
 Given(/^I'm on the cook at home page$/) do
   pending # express the regexp above with the code you wish you had
