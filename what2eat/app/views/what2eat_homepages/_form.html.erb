@@ -1,0 +1,17 @@
+<%= form_for(@what2eat_homepage) do |f| %>
+  <% if @what2eat_homepage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@what2eat_homepage.errors.count, "error") %> prohibited this what2eat_homepage from being saved:</h2>
+
+      <ul>
+      <% @what2eat_homepage.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

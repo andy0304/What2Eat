@@ -1,4 +1,13 @@
 What2eat::Application.routes.draw do
+  resources :restaurants
+
+
+  resources :foods
+
+
+  resources :what2eat_homepages
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
