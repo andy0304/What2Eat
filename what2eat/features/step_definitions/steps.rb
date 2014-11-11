@@ -25,13 +25,13 @@ When(/^I choose to eat out$/) do
 end
 
 Then(/^I can select location near where is convenient for me to eat$/) do
-  assert page.has_content?("where to eat?")
+    assert page.has_content?("where to eat?")
   # assert page.has_content?('Search')
   # assert page.has_content?('Back')
 end
 
 Given(/^I’m on the eat out page$/) do
-  visit 'http://localhost:3000/eat_out'
+  visit 'http://localhost:3000/restaurants'
 end
 
 When(/^I type in the valid location near where is convenient for me to eat$/) do
@@ -68,7 +68,7 @@ Then(/^I should see a message telling me to give the location$/) do
 end
 
 Given(/^I'm on the cook at home page$/) do
-  visit 'http://localhost:3000/cook_at_home'
+  visit 'http://localhost:3000/foods'
 end
 
 When(/^I give the valid number of calories I want to intake$/) do
