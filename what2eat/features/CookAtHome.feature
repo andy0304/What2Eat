@@ -10,7 +10,7 @@ Feature: Users can select maximum amount of calories they want to intake if they
 
     Scenario: Type in an invalid number of calories
         Given I'm on the cook at home page
-        When I give the number of calories that is either too large or too small
+        When I give the number of calories that is less or equal to zero
         Then I should see an error message telling me the available range of calories
 
     Scenario: Not provide the number of calories

@@ -80,10 +80,17 @@ Then(/^I should see a list of recipes that meet the requirements$/) do
   assert page.has_content?('recipes')
 end
 
-When(/^I give the number of calories that is either too large or too small$/) do
+# When(/^I give the number of calories that is either too large or too small$/) do
+#   fill_in 'Maximum Calori', :with => "-10"
+#   click_button 'Search'
+# end
+
+When(/^I give the number of calories that is less or equal to zero$/) do
   fill_in 'Maximum Calori', :with => "-10"
   click_button 'Search'
 end
+
+
 
 Then(/^I should see an error message telling me the available range of calories$/) do
   assert page.has_css?('div.field_with_errors')
