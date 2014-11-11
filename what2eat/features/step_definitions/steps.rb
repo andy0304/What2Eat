@@ -25,9 +25,9 @@ When(/^I choose to eat out$/) do
 end
 
 Then(/^I can select location near where is convenient for me to eat$/) do
-    assert page.has_content?("where to eat?")
-  # assert page.has_content?('Search')
-  # assert page.has_content?('Back')
+  assert page.has_content?("where to eat?")
+  assert page.has_content?('Search')
+  assert page.has_content?('Back')
 end
 
 Given(/^I’m on the eat out page$/) do
@@ -93,7 +93,8 @@ end
 
 
 Then(/^I should see an error message telling me the available range of calories$/) do
-  assert page.has_css?('div.field_with_errors')
+  # assert page.has_css?('div.field_with_errors')
+  assert page.has_content?('Please input calorie value larger than 0')
 end
 
 When(/^I don’t type in the number of calories$/) do
@@ -105,5 +106,6 @@ When(/^I press Search button$/) do
 end
 
 Then(/^I should see an error message telling me to type in the number of calories\.$/) do
-  assert page.has_css?('div.field_with_errors')
+  # assert page.has_css?('div.field_with_errors')
+  assert page.has_content?('Please input calorie value larger than 0')
 end
