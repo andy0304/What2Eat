@@ -21,7 +21,7 @@ Then(/^I can select maximum amount of calorie I want to intake$/) do
 end
 
 When(/^I choose to eat out$/) do
-  click_button('Eat out')
+  click_button('Eat Out')
 end
 
 Then(/^I can select location near where is convenient for me to eat$/) do
