@@ -1,4 +1,6 @@
 What2eat::Application.routes.draw do
+  root :to => "what2eat_homepages#index"
+
   resources :restaurants
 
 
@@ -7,7 +9,7 @@ What2eat::Application.routes.draw do
 
   resources :what2eat_homepages
 
-  root :to => "what2eat_homepages#index"
+  
 
 
   # The priority is based upon order of creation:
