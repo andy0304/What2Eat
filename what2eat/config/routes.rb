@@ -1,16 +1,14 @@
 What2eat::Application.routes.draw do
-  root :to => "what2eat_homepages#index"
 
-  resources :restaurants
-
+  root :to => redirect('/what2eat_homepages')
+  # resources :restaurants
 
   resources :foods
 
-
   resources :what2eat_homepages
 
-  
-
+  get 'restaurants' => 'restaurants#index'
+  post 'restaurants/' => 'restaurants#search'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

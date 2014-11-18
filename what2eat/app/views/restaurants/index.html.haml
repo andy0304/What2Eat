@@ -1,0 +1,6 @@
+%h1 Search Restaurants
+
+= form_tag restaurants_path, :method => :post do
+  = label :place, :address, 'Address'
+  = text_field :place, :address
+  = submit_tag 'Search'
