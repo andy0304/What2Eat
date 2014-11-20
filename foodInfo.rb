@@ -1,5 +1,5 @@
 require 'food_info'
-
+# https://github.com/whistler/Fatsecret
 require 'fatsecret'
 
 FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')
