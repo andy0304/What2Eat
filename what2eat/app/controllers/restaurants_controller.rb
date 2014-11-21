@@ -11,21 +11,16 @@ class RestaurantsController < ApplicationController
   end
 
   def search
-    # @homePage = HomePage.new(params[:homePage])
-    # @homePage.save
-    # flash[:notice] = "#{@homePage.choice} was created successfully"
-    # redirect_to homePage_index_path
-
     @address = params[:place]['address']
     
-    parameters = {  limit: 16 }
-    # term: params[:place],
-    @results = Yelp.client.search(@address, parameters)
-    # render json: Yelp.client.search(@address, parameters)
-    # respond_to do |format|
-    #   format.html # show.html.erb
-    #   # format.json { render json: @restaurant }
-    # end
+    parameters = {  limit: 20,
+                    term: 'restaurants, food',
+                    sort: 2,
+                    radius_filter: 5400
+                 }
+
+    locale = { cc: 'US' }
+    @results = Yelp.client.search(@address, parameters, locale)
 
   end
 
