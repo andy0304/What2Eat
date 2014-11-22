@@ -1,5 +1,6 @@
 # require 'open-uri'
 # require 'Nokogiri'
+require 'fatsecret'
 class FoodsController < ApplicationController
   # GET /foods
   # GET /foods.json
@@ -15,6 +16,13 @@ class FoodsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @foods }
     end
+  end
+
+  def search
+    @ingredient = params[:recipe]['ingre']
+    FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')
+    @results = FatSecret.search_recipes(@ingredient, 50)
+    @detail = @results['recipes']['recipe']
   end
 
   # GET /foods/1

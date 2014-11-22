@@ -2,15 +2,15 @@ require 'food_info'
 # https://github.com/whistler/Fatsecret
 require 'fatsecret'
 
-require 'open-uri'
-require 'Nokogiri'
+# require 'open-uri'
+# require 'Nokogiri'
 
 FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')
 
-url_base = "http://www.weightlossresources.co.uk/calories/calorie_counter/chicken_meat.htm"
-page = Nokogiri::HTML(open("https://www.cia.gov/library/publications/the-world-factbook/print/textversion.html"))
+# url_base = "http://www.weightlossresources.co.uk/calories/calorie_counter/chicken_meat.htm"
+# page = Nokogiri::HTML(open("https://www.cia.gov/library/publications/the-world-factbook/print/textversion.html"))
 
-p content = page.css('div.content').text
+# p content = page.css('div.content').text
 
 # continent = country.css('div.region1 a').text
 # name = country.css('span.region_name1').text
@@ -24,9 +24,15 @@ p content = page.css('div.content').text
 # puts
 # p FatSecret.food(800)['food']
 # puts
-# p FatSecret.search_recipes('chicken',50)
-# puts
-# p FatSecret.recipe(84411)
+p FatSecret.search_recipes('chicken',50)
+puts
+p FatSecret.recipe(84411)
+
+# for i in 0..84500
+#    if i % 10 == 0 then
+#       p FatSecret.recipe(i)
+#    end
+# end
 
 
 # require 'dalli'
