@@ -24,8 +24,8 @@ FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57
 # puts
 # p FatSecret.food(800)['food']
 # puts
-p FatSecret.search_recipes('chicken',50)
-puts
+# p FatSecret.search_recipes('chicken',50)
+# puts
 p FatSecret.recipe(84411)
 
 # for i in 0..84500

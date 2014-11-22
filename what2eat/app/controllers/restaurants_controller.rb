@@ -16,7 +16,7 @@ class RestaurantsController < ApplicationController
     parameters = {  limit: 20,
                     term: 'restaurants, food',
                     sort: 2,
-                    radius_filter: 5400
+                    radius_filter: 1600
                  }
 
     locale = { cc: 'US' }

@@ -1,5 +1,8 @@
 What2eat::Application.routes.draw do
 
+  resources :recipes
+
+
   root :to => redirect('/what2eat_homepages')
   # resources :restaurants
 

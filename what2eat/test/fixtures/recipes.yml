@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rid: 1
+  rname: MyText
+  rcalorie: 1.5
+  rrating: 1.5
+  rcategory: MyText
+
+two:
+  rid: 1
+  rname: MyText
+  rcalorie: 1.5
+  rrating: 1.5
+  rcategory: MyText
