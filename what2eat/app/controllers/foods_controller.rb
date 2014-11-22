@@ -21,8 +21,19 @@ class FoodsController < ApplicationController
   def search
     @ingredient = params[:recipe]['ingre']
     FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')
-    @results = FatSecret.search_recipes(@ingredient, 50)
-    @detail = @results['recipes']['recipe']
+    @results = FatSecret.recipe(84411)
+    @description = @results['recipe']['directions']
+    @categories = @results['recipe']["recipe_categories"]["recipe_category"] #this is an array of hash
+    @str_cate = ''
+    @categories.each do |name|
+      @str_cate << name["recipe_category_name"]
+      @str_cate << ' '
+    end
+    @recipe_name = @results['recipe']["recipe_name"]
+    @recipe_id = @results['recipe']["recipe_id"]
+    @recipe_calories = @results['recipe']["serving_sizes"]["serving"]["calories"]
+    # @results = FatSecret.search_recipes(@ingredient, 50)
+    # @detail = @results['recipes']['recipe']
   end
 
   # GET /foods/1

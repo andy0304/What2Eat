@@ -4,25 +4,35 @@
 
 / %h2= @detail
 
+/ %h3= @results['recipe']["serving_sizes"]["serving"]["calories"]
 / %h3= @results
 
-%table
-	%thead
-		%tr
-			%th Name
-			%th Discription
-			%th Image
-			%th Id
-			%th More Information
+%h3= @recipe_name
+%h4= @recipe_id
+%h4= @recipe_calories
+%h4= @str_cate
+%h4= @description
 
-	%tbody
-	- @detail.each do |recipe|
-		%tr
-			%td= recipe['recipe_name']
-			%td= recipe['recipe_description']
-			%td= image_tag(recipe['recipe_image'])
-			%td= recipe['recipe_id']
-			%td= link_to "details", recipe['recipe_url']
+/ - @results['recipe']['directions'].each do |description|
+/ 	%h3= 
+
+/ %table
+/ 	%thead
+/ 		%tr
+/ 			%th Name
+/ 			%th Discription
+/ 			%th Image
+/ 			%th Id
+/ 			%th More Information
+
+/ 	%tbody
+/ 	- @detail.each do |recipe|
+/ 		%tr
+/ 			%td= recipe['recipe_name']
+/ 			%td= recipe['recipe_description']
+/ 			%td= image_tag(recipe['recipe_image'])
+/ 			%td= recipe['recipe_id']
+/ 			%td= link_to "details", recipe['recipe_url']
 
 
 = link_to "Back", foods_path, :method => :get
