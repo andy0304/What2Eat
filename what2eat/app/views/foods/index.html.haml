@@ -1,0 +1,20 @@
+%h1 Search Food and Recipes
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Energy/100g
+
+  %tbody
+  - @foods.each do |food|
+    %tr
+      %td= food.name
+      %td= food.energy
+
+= form_tag restaurants_path, :method => :post do
+  = label :recipe, :ingre, 'Ingredient'
+  = text_field :recipe, :ingre
+  = submit_tag 'Search for recipes'
+
+= link_to "Back", what2eat_homepages_path, :method => :get

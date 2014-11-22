@@ -1,8 +1,15 @@
+# require 'open-uri'
+# require 'Nokogiri'
 class FoodsController < ApplicationController
   # GET /foods
   # GET /foods.json
   def index
+
     @foods = Food.all
+    # p @foods
+    # if @foods == null then
+    #   p 'sdfsdfa'
+    # end
 
     respond_to do |format|
       format.html # index.html.erb
