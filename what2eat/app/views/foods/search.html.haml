@@ -7,11 +7,12 @@
 / %h3= @results['recipe']["serving_sizes"]["serving"]["calories"]
 / %h3= @results
 
-%h3= @recipe_name
-%h4= @recipe_id
-%h4= @recipe_calories
-%h4= @str_cate
-%h4= @description
+
+/ %h3= @recipe_name
+/ %h4= @recipe_id
+/ %h4= @recipe_calories
+/ %h4= @str_cate
+/ %h4= @description
 
 / - @results['recipe']['directions'].each do |description|
 / 	%h3= 
@@ -34,5 +35,21 @@
 / 			%td= recipe['recipe_id']
 / 			%td= link_to "details", recipe['recipe_url']
 
+
+%table
+	%thead
+		%tr
+			%th Name
+			%th Discription
+			%th Image
+			%th Id
+
+	%tbody
+	- @recommend_recipe.each do |recipe|
+		%tr
+			%td= recipe.rrating
+			%td= recipe.rid
+			%td= recipe.rcalorie
+			%td= recipe.rname
 
 = link_to "Back", foods_path, :method => :get
