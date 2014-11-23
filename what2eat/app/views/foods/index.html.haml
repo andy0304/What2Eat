@@ -2,9 +2,6 @@
 
 %table
   %thead
-    %tr
-      %th Name
-      %th Energy/100g
 
   %tbody
   - @foods.each do |food|
@@ -18,3 +15,14 @@
   = submit_tag 'Search for foods'
 
 = link_to "Back", what2eat_homepages_path, :method => :get
+%table
+  %thead
+    %tr
+      %th Women
+      %th Men
+
+  %tbody
+    %tr
+      %td= image_tag('http://www.chartsgraphsdiagrams.com/HealthCharts/images/calorie-requirement-women.png')
+      %td= image_tag('http://www.chartsgraphsdiagrams.com/HealthCharts/images/calorie-requirement-men.png')
+
