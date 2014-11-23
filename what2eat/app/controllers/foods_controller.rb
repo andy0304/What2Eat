@@ -26,7 +26,11 @@ class FoodsController < ApplicationController
     @array = []
     @recommend_recipe.each do |ele|
       @array.push(FatSecret.recipe(ele.rid))
-    end
+
+
+    # session[:return_to] ||= request.referer
+
+  end
 
     # @ingredient = params[:recipe]['ingre']
     # FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')

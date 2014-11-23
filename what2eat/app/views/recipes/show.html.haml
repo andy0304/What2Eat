@@ -41,9 +41,15 @@
 / </p>
 
 
+
+
 / <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 =link_to 'All recipes', recipes_path
-=link_to 'Back', foods_path
+/ =link_to 'Back', foods_path
+/ =link_to 'Back', url_for(:back)
+
+=link_to_function "Back", "history.back()"
+
 
 
 
