@@ -12,6 +12,11 @@ class RestaurantsController < ApplicationController
 
   def search
     @address = params[:place]['address']
+
+    # set default address
+    if @address.length == 0
+      @address = 'upenn'
+    end
     
     parameters = {  limit: 20,
                     term: 'restaurants, food',
@@ -22,6 +27,10 @@ class RestaurantsController < ApplicationController
     locale = { cc: 'US' }
     @results = Yelp.client.search(@address, parameters, locale)
 
+
+    # if @results[:error]
+    #   redirect_to post_url('restaurants#index'), alert: "Watch it, mister!" 
+    # end
   end
 
   # GET /restaurants/1
