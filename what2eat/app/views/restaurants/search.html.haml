@@ -2,26 +2,26 @@
 
 %h2= @address
 
-%h2= @results.total
-
 / %h3= @results
 
 %table
 	%thead
 		%tr
+			%th
 			%th Name
+			%th Rating
 			%th Address
 			%th Phone
-			%th Rating
 			%th More Information
 
 	%tbody
 	- @results.businesses.each do |restaurant|
 		%tr
+			%td= image_tag(restaurant.image_url)
 			%td= restaurant.name
+			%td= restaurant.rating
 			%td= restaurant.location.display_address
 			%td= restaurant.display_phone
-			%td= restaurant.rating
 			%td= link_to "details", restaurant.url
 
 
