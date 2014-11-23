@@ -21,7 +21,7 @@ class FoodsController < ApplicationController
   def search
     @cal = params[:recipe]['ingre']
     cal_typedin = @cal
-    @recommend_recipe = Recipe.where(['rcalorie < ?', @cal]).limit(10).order('rrating DESC')
+    @recommend_recipe = Recipe.where(['rcalorie < ?', @cal]).limit(10).order('rcalorie DESC')
     # @ingredient = params[:recipe]['ingre']
     # FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')
     # @results = FatSecret.recipe(84411)

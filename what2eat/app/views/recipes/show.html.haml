@@ -1,0 +1,47 @@
+%h1 Recipe Detail
+
+%h2= @recipe.rname
+
+%h2= @recipe.rcalorie
+
+%h2= image_tag(@image_link)
+
+/ %h2= @description
+
+-@description["direction"].each do |dir|
+  %h2= dir["direction_description"]
+
+/ <p id="notice"><%= notice %></p>
+
+/ <p>
+/   <b>Rid:</b>
+/   <%= @recipe.rid %>
+/ </p>
+
+/ <p>
+/   <b>Rname:</b>
+/   <%= @recipe.rname %>
+/ </p>
+
+/ <p>
+/   <b>Rcalorie:</b>
+/   <%= @recipe.rcalorie %>
+/ </p>
+
+/ <p>
+/   <b>Rrating:</b>
+/   <%= @recipe.rrating %>
+/ </p>
+
+/ <p>
+/   <b>Rcategory:</b>
+/   <%= @recipe.rcategory %>
+/ </p>
+
+
+/ <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+=link_to 'All recipes', recipes_path
+=link_to 'Back', foods_path
+
+
+

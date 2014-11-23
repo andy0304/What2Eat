@@ -8,12 +8,14 @@ What2eat::Application.routes.draw do
 
   # resources :foods
 
-  resources :what2eat_homepages
+  # resources :what2eat_homepages
+  get 'what2eat_homepages' => 'what2eat_homepages#index'
 
   get 'restaurants' => 'restaurants#index'
   post 'restaurants/' => 'restaurants#search'
   get 'foods' => 'foods#index'
   post 'foods' => 'foods#search'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

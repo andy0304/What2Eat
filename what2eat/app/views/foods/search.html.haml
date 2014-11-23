@@ -40,16 +40,25 @@
 	%thead
 		%tr
 			%th Name
-			%th Discription
-			%th Image
-			%th Id
+			%th Rating
+			%th KCalories/serving
 
 	%tbody
 	- @recommend_recipe.each do |recipe|
 		%tr
+			%td= link_to recipe.rname, recipe_path(recipe)
 			%td= recipe.rrating
-			%td= recipe.rid
 			%td= recipe.rcalorie
-			%td= recipe.rname
 
 = link_to "Back", foods_path, :method => :get
+
+
+
+
+
+
+
+
+
+
+

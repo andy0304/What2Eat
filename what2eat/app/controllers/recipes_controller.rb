@@ -1,3 +1,5 @@
+require 'fatsecret'
+
 class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
@@ -13,7 +15,11 @@ class RecipesController < ApplicationController
   # GET /recipes/1
   # GET /recipes/1.json
   def show
+    FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')
     @recipe = Recipe.find(params[:id])
+    @results = FatSecret.recipe(@recipe.rid)
+    @description = @results['recipe']['directions']
+    @image_link = @results['recipe']["recipe_images"]
 
     respond_to do |format|
       format.html # show.html.erb

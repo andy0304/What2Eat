@@ -17,7 +17,7 @@ FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57
 
 
 if Recipe.all.length == 0
-	for i in 800..90000
+	for i in 1..1000
 		# sleep(1.0/100.0)
 		@recipe_info = FatSecret.recipe(i)
 		if @recipe_info['error'] == nil
