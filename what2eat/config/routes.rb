@@ -15,6 +15,7 @@ What2eat::Application.routes.draw do
   post 'restaurants/' => 'restaurants#search'
   get 'foods' => 'foods#index'
   post 'foods' => 'foods#search'
+  # update 'foods' => 'food#search'
 
 
   # The priority is based upon order of creation:

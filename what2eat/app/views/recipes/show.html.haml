@@ -4,12 +4,14 @@
 
 %h2= @recipe.rcalorie
 
-%h2= image_tag(@image_link)
+- if @image_link != nil
+	%h2= image_tag(@image_link['recipe_image'])
+
 
 / %h2= @description
 
 -@description["direction"].each do |dir|
-  %h2= dir["direction_description"]
+	%h2= dir["direction_description"]
 
 / <p id="notice"><%= notice %></p>
 

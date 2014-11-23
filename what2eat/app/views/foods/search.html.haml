@@ -35,20 +35,38 @@
 / 			%td= recipe['recipe_id']
 / 			%td= link_to "details", recipe['recipe_url']
 
+/ %h3= @array[1]['recipe']["recipe_description"]
+/ %h3= image_tag(@array[1]['recipe']["recipe_images"]["recipe_image"])
+/ - n = 0
+/ - for i in 1..10
+/ 	%h3= @array[n]['recipe']["recipe_description"]
+/ 	- if @array[n]['recipe']["recipe_images"] != nil
+/ 		%h3= image_tag(@array[n]['recipe']["recipe_images"]["recipe_image"])
+/ 	- n = n + 1
 
 %table
 	%thead
 		%tr
 			%th Name
+			%th Discription
 			%th Rating
 			%th KCalories/serving
+			%th image
 
 	%tbody
+	- n = 0
 	- @recommend_recipe.each do |recipe|
+		- ele = @array[n]
 		%tr
 			%td= link_to recipe.rname, recipe_path(recipe)
+			%td= ele['recipe']["recipe_description"]
 			%td= recipe.rrating
 			%td= recipe.rcalorie
+			- if ele['recipe']["recipe_images"] != nil
+				%td= image_tag(ele['recipe']["recipe_images"]["recipe_image"], :size => '153x110')
+			- else
+				%td= image_tag("https://cdn0.iconfinder.com/data/icons/feather/96/no-512.png", :size => '153x110')
+		- n = n + 1
 
 = link_to "Back", foods_path, :method => :get
 
