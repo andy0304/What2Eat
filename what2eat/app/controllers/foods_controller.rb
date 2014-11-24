@@ -26,7 +26,7 @@ class FoodsController < ApplicationController
     #   redirect_to foods_path
     # end
     if @cal.to_i <= 0
-      flash[:warning] = "Cannot have calories <= 0"
+      flash[:warning] = "Invalid input #{@cal}"
       redirect_to foods_path
     end
     @recommend_recipe = Recipe.where(['rcalorie < ?', @cal]).limit(10).order('rcalorie DESC')
