@@ -12,8 +12,9 @@ When(/^I choose to cook at home$/) do
 end
 
 Then(/^I can see a table of calories of typical food ingredients$/) do
-  assert page.has_xpath?('//table')
-  # assert page.has_content?('Search Food and Recipes')
+
+  # assert page.has_xpath?('//table')
+  assert page.has_content?('Search Food and Recipes')
   # assert page.has_content?('calories')
 
 end
