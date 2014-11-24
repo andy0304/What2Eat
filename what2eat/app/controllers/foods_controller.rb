@@ -21,7 +21,14 @@ class FoodsController < ApplicationController
   def search
     FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')
     @cal = params[:recipe]['ingre']
-    cal_typedin = @cal
+    # if @cal == nil
+    #   flash[:notice] = "#{@cal}: calories cannot be null"
+    #   redirect_to foods_path
+    # end
+    if @cal.to_i <= 0
+      flash[:warning] = "Cannot have calories <= 0"
+      redirect_to foods_path
+    end
     @recommend_recipe = Recipe.where(['rcalorie < ?', @cal]).limit(10).order('rcalorie DESC')
     @array = []
     @recommend_recipe.each do |ele|
@@ -30,7 +37,7 @@ class FoodsController < ApplicationController
 
     # session[:return_to] ||= request.referer
 
-  end
+    end
 
     # @ingredient = params[:recipe]['ingre']
     # FatSecret.init('1bc2cc311bb24d56a24322272e790419', '42c47bc7053247e2a43adfb8db57e6fc')
