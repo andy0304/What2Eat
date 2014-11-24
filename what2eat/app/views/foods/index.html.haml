@@ -10,9 +10,9 @@
       %td= food.energy
 
 = form_tag foods_path, :method => :post do
-  = label :recipe, :ingre, 'Max Calories'
+  = label :recipe, :ingre, 'Calories Needed'
   = text_field :recipe, :ingre
-  = submit_tag 'Search for foods'
+  = submit_tag 'Search for Recipe'
 
 = link_to "Back", what2eat_homepages_path, :method => :get
 %table
