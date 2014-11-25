@@ -38,12 +38,12 @@ Given(/^I’m on the eat out page$/) do
 end
 
 When(/^I type in the valid location near where is convenient for me to eat$/) do
-  fill_in 'Address', :with => '3827 walnut street'
+  fill_in 'Address', :with => 'china town'
   click_button('Search')
 end
 
 Then(/^I can see a list of recommended restaurants which are within (\d+) mile of the location I select$/) do |arg1|
-  assert page.has_content?('3827 walnut street')
+  assert page.has_content?('china town')
   assert page.has_xpath?('//table/tr')
 end
 
@@ -59,7 +59,6 @@ end
 
 When(/^I don’t type in any location$/) do
   fill_in 'Address', :with => ''
-  click_button('Search')
 end
 
 When(/^I click the Search button$/) do
@@ -67,7 +66,7 @@ When(/^I click the Search button$/) do
 end
 
 Then(/^I should see a message telling me to give the location$/) do
-  assert page.has_content?('Please type the valid address')
+  assert page.has_content?('Invalid')
 end
 
 Given(/^I'm on the cook at home page$/) do

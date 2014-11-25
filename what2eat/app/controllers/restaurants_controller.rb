@@ -15,22 +15,23 @@ class RestaurantsController < ApplicationController
 
     # set default address
     if @address.length == 0
-      @address = 'upenn'
+      flash[:warning] = "Invalid input. Please type in an address"
+      redirect_to restaurants_path
+    else
+      parameters = {  limit: 20,
+                      term: 'restaurants, food',
+                      sort: 2,
+                      radius_filter: 1600
+                   }
+
+      locale = { cc: 'US' }
+      @results = Yelp.client.search(@address, parameters, locale)
+
+
+      # if @results[:error]
+      #   redirect_to post_url('restaurants#index'), alert: "Watch it, mister!" 
+      # end
     end
-    
-    parameters = {  limit: 20,
-                    term: 'restaurants, food',
-                    sort: 2,
-                    radius_filter: 1600
-                 }
-
-    locale = { cc: 'US' }
-    @results = Yelp.client.search(@address, parameters, locale)
-
-
-    # if @results[:error]
-    #   redirect_to post_url('restaurants#index'), alert: "Watch it, mister!" 
-    # end
   end
 
   # GET /restaurants/1
