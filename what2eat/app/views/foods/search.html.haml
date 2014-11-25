@@ -59,7 +59,7 @@
 		- ele = @array[n]
 		%tr
 			%td= link_to recipe.rname, recipe_path(recipe)
-			- if ele['recipe']["recipe_description"] != nil
+			- if ele['recipe'] != nil
 				%td= ele['recipe']["recipe_description"]
 			- else
 				%td No discription
