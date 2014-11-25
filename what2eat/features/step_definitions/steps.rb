@@ -98,7 +98,7 @@ end
 
 Then(/^I should see an error message telling me the available range of calories$/) do
   # assert page.has_css?('div.field_with_errors')
-  assert page.has_content?('Please input calorie value larger than 0')
+  assert page.has_content?('Invalid')
 end
 
 When(/^I don’t type in the number of calories$/) do
@@ -111,5 +111,5 @@ end
 
 Then(/^I should see an error message telling me to type in the number of calories\.$/) do
   # assert page.has_css?('div.field_with_errors')
-  assert page.has_content?('Please input calorie value larger than 0')
+  assert page.has_content?('Invalid')
 end
