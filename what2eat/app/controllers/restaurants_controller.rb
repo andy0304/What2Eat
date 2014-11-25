@@ -18,7 +18,7 @@ class RestaurantsController < ApplicationController
       flash[:warning] = "Invalid input. Please type in an address"
       redirect_to restaurants_path
     else
-      parameters = {  limit: 20,
+      parameters = {  limit: 10,
                       term: 'restaurants, food',
                       sort: 2,
                       radius_filter: 1600
