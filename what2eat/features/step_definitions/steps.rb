@@ -119,12 +119,16 @@ end
 
 Given(/^I'm the recipes search results page$/) do
   visit 'http://localhost:3000/foods'
-  fill_in 'Calories Needed', :with => "300"
+  fill_in 'Calories Needed', :with => '300'
   click_button 'Search for Recipe'
 end
 
 When(/^I click a specific recipe$/) do
-  click_link('Apple Strudel')
+  # click_link('Apple Strudel')
+  # first(:link, 'Southwest Chicken').click
+  # find("a[href='/recipes/340']").click
+  find(:xpath, "//tr/td[1]/*").click
+  # save_and_open_page
 end
 
 Then(/^I should see the detailed instructions of the recipe$/) do
@@ -138,7 +142,6 @@ end
 Then(/^I can type in the new amout of calories needed$/) do
   assert page.has_xpath?('//table//td//img')
 end
-
 
 Given(/^I'm on the restaurants search results page$/) do
   visit 'http://localhost:3000/restaurants'
@@ -155,6 +158,16 @@ Then(/^I can type in a new address$/) do
   assert page.has_content?('Search')
   assert page.has_content?('Back')
 end
+
+When(/^I click a preferred restaurant$/) do
+  # save_and_open_page
+  first(:link, 'details').click
+end
+
+Then(/^I can see the details information of this restaurant on the Yelp website$/) do
+  assert page.has_content?('Yelp')
+end
+
 
 
 

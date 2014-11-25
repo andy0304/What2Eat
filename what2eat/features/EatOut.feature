@@ -19,6 +19,11 @@ Feature: Users can type in location convenient for them to eat if they choose to
         And I click the Search button
         Then I should see a message telling me to give the location
 
+    Scenario: See the details of restaurant on the Yelp website
+        Given I'm on the restaurants search results page
+        When I click a preferred restaurant
+        Then I can see the details information of this restaurant on the Yelp website
+
     Scenario: Back to address type in page
         Given I'm on the restaurants search results page
         When I click Back button
