@@ -18,3 +18,8 @@ Feature: Users can type in location convenient for them to eat if they choose to
         When I don’t type in any location 
         And I click the Search button
         Then I should see a message telling me to give the location
+
+    Scenario: Back to address type in page
+        Given I'm on the restaurants search results page
+        When I click Back button
+        Then I can type in a new address

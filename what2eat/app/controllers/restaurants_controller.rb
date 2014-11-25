@@ -26,10 +26,8 @@ class RestaurantsController < ApplicationController
 
       locale = { cc: 'US' }
       @results = Yelp.client.search(@address, parameters, locale)
-
-
-      # if @results[:error]
-      #   redirect_to post_url('restaurants#index'), alert: "Watch it, mister!" 
+      # if @results.error
+      #   redirect_to restaurants_path
       # end
     end
   end

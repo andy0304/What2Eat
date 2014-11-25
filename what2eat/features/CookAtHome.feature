@@ -1,7 +1,7 @@
-Feature: Users can select maximum amount of calories they want to intake if they choose to cook meals at home
+Feature: Users can select needed amount of calories they want to intake if they choose to cook meals at home
     As a user
     So that I want to figure out what to cook at home
-    I want to select maximum amount of calorie to intake
+    I want to select needed amount of calorie to intake
 
     Scenario: Type in a valid number of calories
         Given I'm on the cook at home page
@@ -18,3 +18,15 @@ Feature: Users can select maximum amount of calories they want to intake if they
         When I don’t type in the number of calories
         And I press Search button
         Then I should see an error message telling me to type in the number of calories.
+
+    Scenario: See the details of recipes
+        Given I'm the recipes search results page
+        When I click a specific recipe
+        Then I should see the detailed instructions of the recipe
+
+    Scenario: Back to the calories selection page
+        Given I'm the recipes search results page
+        When I click the back button
+        Then I can type in the new amout of calories needed
+
+

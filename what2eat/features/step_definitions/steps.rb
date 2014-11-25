@@ -8,23 +8,24 @@ Then(/^I should see Cook at Home button and Eat Out Button$/) do
 end
 
 When(/^I choose to cook at home$/) do
-  click_button 'Cook at Home'
+  # click_button('Cook at Home')
+  visit 'http://localhost:3000/foods'
 end
 
 Then(/^I can see a table of calories of typical food ingredients$/) do
 
-  # assert page.has_xpath?('//table')
-  assert page.has_content?('Search Food and Recipes')
+  assert page.has_xpath?('//table//td//img')
+  # assert page.has_content?('Search Food and Recipes')
   # assert page.has_content?('calories')
 
 end
 
 Then(/^I can select maximum amount of calorie I want to intake$/) do
-  assert page.has_content?('Please input the number of calories to intake')
+  assert page.has_content?('Calories Needed')
 end
 
 When(/^I choose to eat out$/) do
-  click_button('Eat Out')
+  visit 'http://localhost:3000/restaurants'
 end
 
 Then(/^I can select location near where is convenient for me to eat$/) do
@@ -75,7 +76,7 @@ end
 
 When(/^I give the valid number of calories I want to intake$/) do
   fill_in 'Calories Needed', :with => "300"
-  click_button 'Search'
+  click_button 'Search for Recipe'
 end
 
 Then(/^I should see a list of recipes that meet the requirements$/) do
@@ -90,7 +91,7 @@ end
 
 When(/^I give the number of calories that is less or equal to zero$/) do
   fill_in 'Calories Needed', :with => "-10"
-  click_button 'Search'
+  click_button 'Search for Recipe'
 end
 
 
@@ -105,10 +106,53 @@ When(/^I don’t type in the number of calories$/) do
 end
 
 When(/^I press Search button$/) do
-  click_button 'Search'
+  click_button 'Search for Recipe'
 end
 
 Then(/^I should see an error message telling me to type in the number of calories\.$/) do
   # assert page.has_css?('div.field_with_errors')
   assert page.has_content?('Invalid')
 end
+
+
+Given(/^I'm the recipes search results page$/) do
+  visit 'http://localhost:3000/foods'
+  fill_in 'Calories Needed', :with => "300"
+  click_button 'Search for Recipe'
+end
+
+When(/^I click a specific recipe$/) do
+  click_link('Southwest Chicken Soup')
+end
+
+Then(/^I should see the detailed instructions of the recipe$/) do
+  assert page.has_content?('Recipe Detail')
+end
+
+When(/^I click the back button$/) do
+  click_link('Back')
+end
+
+Then(/^I can type in the new amout of calories needed$/) do
+  assert page.has_xpath?('//table//td//img')
+end
+
+
+Given(/^I'm on the restaurants search results page$/) do
+  visit 'http://localhost:3000/restaurants'
+  fill_in 'Address', :with => 'china town'
+  click_button('Search')
+end
+
+When(/^I click Back button$/) do
+  click_link('Back')
+end
+
+Then(/^I can type in a new address$/) do
+  assert page.has_content?('Search Restaurants')
+  assert page.has_content?('Search')
+  assert page.has_content?('Back')
+end
+
+
+
