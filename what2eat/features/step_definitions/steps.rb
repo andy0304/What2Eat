@@ -9,7 +9,8 @@ end
 
 When(/^I choose to cook at home$/) do
   # click_button('Cook at Home')
-  visit 'http://localhost:3000/foods'
+  # visit 'http://localhost:3000/foods'
+  click_link('Cook at Home')
 end
 
 Then(/^I can see a table of calories of typical food ingredients$/) do
@@ -25,7 +26,8 @@ Then(/^I can select maximum amount of calorie I want to intake$/) do
 end
 
 When(/^I choose to eat out$/) do
-  visit 'http://localhost:3000/restaurants'
+  # visit 'http://localhost:3000/restaurants'
+  click_link('Eat Out')
 end
 
 Then(/^I can select location near where is convenient for me to eat$/) do
@@ -122,7 +124,7 @@ Given(/^I'm the recipes search results page$/) do
 end
 
 When(/^I click a specific recipe$/) do
-  click_link('Southwest Chicken Soup')
+  click_link('Apple Strudel')
 end
 
 Then(/^I should see the detailed instructions of the recipe$/) do
