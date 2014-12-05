@@ -1,3 +1,5 @@
+%link{:rel => :stylesheet, :type => :"text/css", :href => "/assets/css/scaffolds"}
+
 %h1 Search results
 
 %h2= @ingredient
@@ -71,7 +73,7 @@
 				%td= image_tag("http://www.changefood.org/wp-content/uploads/2013/09/feel-healthier-bodymind-fresh-food-better-than-canned_32-150x150.jpg", :size => '153x110')
 		- n = n + 1
 
-= link_to "Back", foods_path, :method => :get
+= link_to "Back", foods_path, :method => :get, class: "btn btn-xs edituser"
 
 
 

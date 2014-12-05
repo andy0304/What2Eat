@@ -14,27 +14,27 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-12-05T13:11:49-05:00">2014-12-05T13:11:49-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-12-05T16:24:32-05:00">2014-12-05T16:24:32-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">62.29%</span></span>
+    (<span class="covered_percent"><span class="red">79.67%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.09
+         1.43
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>28</b> files in total.
-    <b>350</b> relevant lines. 
-    <span class="green"><b>218</b> lines covered</span> and
-    <span class="red"><b>132</b> lines missed </span>
+    <b>246</b> relevant lines. 
+    <span class="green"><b>196</b> lines covered</span> and
+    <span class="red"><b>50</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#e19c67068c14373cc5b969cc8ab3c3d0183f9e48" class="src_link" title="app/controllers/foods_controller.rb">app/controllers/foods_controller.rb</a></td>
-        <td class="red strong">45.1 %</td>
+        <td class="green strong">100.0 %</td>
         <td>130</td>
-        <td>51</td>
-        <td>23</td>
-        <td>28</td>
-        <td>2.4</td>
+        <td>17</td>
+        <td>17</td>
+        <td>0</td>
+        <td>6.7</td>
       </tr>
       
       <tr>
@@ -82,22 +82,22 @@
       
       <tr>
         <td class="strong"><a href="#c41afca7901de1bc64585a397ccf79310822ec47" class="src_link" title="app/controllers/restaurants_controller.rb">app/controllers/restaurants_controller.rb</a></td>
-        <td class="red strong">41.67 %</td>
-        <td>105</td>
-        <td>48</td>
-        <td>20</td>
-        <td>28</td>
-        <td>1.4</td>
+        <td class="yellow strong">88.24 %</td>
+        <td>42</td>
+        <td>17</td>
+        <td>15</td>
+        <td>2</td>
+        <td>3.7</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#30a671d49cdb9ff99baca52674e762f31ec2ea6b" class="src_link" title="app/controllers/what2eat_homepages_controller.rb">app/controllers/what2eat_homepages_controller.rb</a></td>
-        <td class="red strong">30.0 %</td>
-        <td>83</td>
-        <td>40</td>
-        <td>12</td>
-        <td>28</td>
-        <td>0.5</td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -385,11 +385,11 @@
         <div class="source_table" id="e19c67068c14373cc5b969cc8ab3c3d0183f9e48">
   <div class="header">
     <h3>app/controllers/foods_controller.rb</h3>
-    <h4><span class="red">45.1 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>51</b> relevant lines. 
-      <span class="green"><b>23</b> lines covered</span> and
-      <span class="red"><b>28</b> lines missed.</span>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -753,25 +753,25 @@
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby">  # GET /foods/1</code>
+          <code class="ruby">  # # GET /foods/1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">  # GET /foods/1.json</code>
+          <code class="ruby">  # # GET /foods/1.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="62">
           
-          <code class="ruby">  def show</code>
+          
+          <code class="ruby">  # def show</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="63">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">    @food = Food.find(params[:id])</code>
+          <code class="ruby">  #   @food = Food.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
@@ -780,34 +780,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">    respond_to do |format|</code>
+          <code class="ruby">  #   respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="66">
+        <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">      format.html # show.html.erb</code>
+          <code class="ruby">  #     format.html # show.html.erb</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">      format.json { render json: @food }</code>
+          <code class="ruby">  #     format.json { render json: @food }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  #   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="70">
@@ -819,25 +819,25 @@
         <li class="never" data-hits="" data-linenumber="71">
           
           
-          <code class="ruby">  # GET /foods/new</code>
+          <code class="ruby">  # # GET /foods/new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby">  # GET /foods/new.json</code>
+          <code class="ruby">  # # GET /foods/new.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="73">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="73">
           
-          <code class="ruby">  def new</code>
+          
+          <code class="ruby">  # def new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="74">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
-          <code class="ruby">    @food = Food.new</code>
+          <code class="ruby">  #   @food = Food.new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="75">
@@ -846,34 +846,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby">    respond_to do |format|</code>
+          <code class="ruby">  #   respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="77">
           
           
-          <code class="ruby">      format.html # new.html.erb</code>
+          <code class="ruby">  #     format.html # new.html.erb</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="78">
+        <li class="never" data-hits="" data-linenumber="78">
           
           
-          <code class="ruby">      format.json { render json: @food }</code>
+          <code class="ruby">  #     format.json { render json: @food }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  #   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
@@ -885,25 +885,25 @@
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">  # GET /foods/1/edit</code>
+          <code class="ruby">  # # GET /foods/1/edit</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="83">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="83">
           
-          <code class="ruby">  def edit</code>
+          
+          <code class="ruby">  # def edit</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="84">
+        <li class="never" data-hits="" data-linenumber="84">
           
           
-          <code class="ruby">    @food = Food.find(params[:id])</code>
+          <code class="ruby">  #   @food = Food.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="86">
@@ -915,25 +915,25 @@
         <li class="never" data-hits="" data-linenumber="87">
           
           
-          <code class="ruby">  # POST /foods</code>
+          <code class="ruby">  # # POST /foods</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="88">
           
           
-          <code class="ruby">  # POST /foods.json</code>
+          <code class="ruby">  # # POST /foods.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="89">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="89">
           
-          <code class="ruby">  def create</code>
+          
+          <code class="ruby">  # def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="90">
+        <li class="never" data-hits="" data-linenumber="90">
           
           
-          <code class="ruby">    @food = Food.new(params[:food])</code>
+          <code class="ruby">  #   @food = Food.new(params[:food])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">
@@ -942,64 +942,64 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="92">
+        <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby">    respond_to do |format|</code>
+          <code class="ruby">  #   respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="93">
+        <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby">      if @food.save</code>
+          <code class="ruby">  #     if @food.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="94">
+        <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby">        format.html { redirect_to @food, notice: &#39;Food was successfully created.&#39; }</code>
+          <code class="ruby">  #       format.html { redirect_to @food, notice: &#39;Food was successfully created.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="95">
+        <li class="never" data-hits="" data-linenumber="95">
           
           
-          <code class="ruby">        format.json { render json: @food, status: :created, location: @food }</code>
+          <code class="ruby">  #       format.json { render json: @food, status: :created, location: @food }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="96">
           
           
-          <code class="ruby">      else</code>
+          <code class="ruby">  #     else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="97">
+        <li class="never" data-hits="" data-linenumber="97">
           
           
-          <code class="ruby">        format.html { render action: &quot;new&quot; }</code>
+          <code class="ruby">  #       format.html { render action: &quot;new&quot; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="98">
+        <li class="never" data-hits="" data-linenumber="98">
           
           
-          <code class="ruby">        format.json { render json: @food.errors, status: :unprocessable_entity }</code>
+          <code class="ruby">  #       format.json { render json: @food.errors, status: :unprocessable_entity }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">  #     end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="100">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  #   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
@@ -1011,25 +1011,25 @@
         <li class="never" data-hits="" data-linenumber="103">
           
           
-          <code class="ruby">  # PUT /foods/1</code>
+          <code class="ruby">  # # PUT /foods/1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="104">
           
           
-          <code class="ruby">  # PUT /foods/1.json</code>
+          <code class="ruby">  # # PUT /foods/1.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="105">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="105">
           
-          <code class="ruby">  def update</code>
+          
+          <code class="ruby">  # def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="106">
+        <li class="never" data-hits="" data-linenumber="106">
           
           
-          <code class="ruby">    @food = Food.find(params[:id])</code>
+          <code class="ruby">  #   @food = Food.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
@@ -1038,64 +1038,64 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="108">
+        <li class="never" data-hits="" data-linenumber="108">
           
           
-          <code class="ruby">    respond_to do |format|</code>
+          <code class="ruby">  #   respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="109">
+        <li class="never" data-hits="" data-linenumber="109">
           
           
-          <code class="ruby">      if @food.update_attributes(params[:food])</code>
+          <code class="ruby">  #     if @food.update_attributes(params[:food])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="110">
+        <li class="never" data-hits="" data-linenumber="110">
           
           
-          <code class="ruby">        format.html { redirect_to @food, notice: &#39;Food was successfully updated.&#39; }</code>
+          <code class="ruby">  #       format.html { redirect_to @food, notice: &#39;Food was successfully updated.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="111">
+        <li class="never" data-hits="" data-linenumber="111">
           
           
-          <code class="ruby">        format.json { head :no_content }</code>
+          <code class="ruby">  #       format.json { head :no_content }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="112">
           
           
-          <code class="ruby">      else</code>
+          <code class="ruby">  #     else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="113">
+        <li class="never" data-hits="" data-linenumber="113">
           
           
-          <code class="ruby">        format.html { render action: &quot;edit&quot; }</code>
+          <code class="ruby">  #       format.html { render action: &quot;edit&quot; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="114">
+        <li class="never" data-hits="" data-linenumber="114">
           
           
-          <code class="ruby">        format.json { render json: @food.errors, status: :unprocessable_entity }</code>
+          <code class="ruby">  #       format.json { render json: @food.errors, status: :unprocessable_entity }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="115">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">  #     end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="116">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  #   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="117">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="118">
@@ -1107,31 +1107,31 @@
         <li class="never" data-hits="" data-linenumber="119">
           
           
-          <code class="ruby">  # DELETE /foods/1</code>
+          <code class="ruby">  # # DELETE /foods/1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="120">
           
           
-          <code class="ruby">  # DELETE /foods/1.json</code>
+          <code class="ruby">  # # DELETE /foods/1.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="121">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="121">
           
-          <code class="ruby">  def destroy</code>
+          
+          <code class="ruby">  # def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="122">
+        <li class="never" data-hits="" data-linenumber="122">
           
           
-          <code class="ruby">    @food = Food.find(params[:id])</code>
+          <code class="ruby">  #   @food = Food.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="123">
+        <li class="never" data-hits="" data-linenumber="123">
           
           
-          <code class="ruby">    @food.destroy</code>
+          <code class="ruby">  #   @food.destroy</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="124">
@@ -1140,34 +1140,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="125">
+        <li class="never" data-hits="" data-linenumber="125">
           
           
-          <code class="ruby">    respond_to do |format|</code>
+          <code class="ruby">  #   respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="126">
+        <li class="never" data-hits="" data-linenumber="126">
           
           
-          <code class="ruby">      format.html { redirect_to foods_url }</code>
+          <code class="ruby">  #     format.html { redirect_to foods_url }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="127">
+        <li class="never" data-hits="" data-linenumber="127">
           
           
-          <code class="ruby">      format.json { head :no_content }</code>
+          <code class="ruby">  #     format.json { head :no_content }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="128">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  #   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="129">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="130">
@@ -1735,11 +1735,11 @@
         <div class="source_table" id="c41afca7901de1bc64585a397ccf79310822ec47">
   <div class="header">
     <h3>app/controllers/restaurants_controller.rb</h3>
-    <h4><span class="red">41.67 %</span> covered</h4>
+    <h4><span class="yellow">88.24 %</span> covered</h4>
     <div>
-      <b>48</b> relevant lines. 
-      <span class="green"><b>20</b> lines covered</span> and
-      <span class="red"><b>28</b> lines missed.</span>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -1755,61 +1755,61 @@
         <li class="never" data-hits="" data-linenumber="2">
           
           
-          <code class="ruby">  # GET /restaurants</code>
+          <code class="ruby">  # rescue_from RestaurantsController::UNAVAILABLE_FOR_LOCATION, with: :unavailable_location</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
           
           
+          <code class="ruby">  # GET /restaurants</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
           <code class="ruby">  # GET /restaurants.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="5">
           
-          <code class="ruby">  def index</code>
-        </li>
-      
-        <li class="covered" data-hits="8" data-linenumber="5">
-          <span class="hits">8</span>
           
-          <code class="ruby">    @restaurants = Restaurant.all</code>
+          <code class="ruby">  # def unavailable_location</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
+          <code class="ruby">  #     render plain: &quot;404 Not Found&quot;, status: 404</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="11">
           <span class="hits">8</span>
           
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="covered" data-hits="8" data-linenumber="8">
-          <span class="hits">8</span>
-          
-          <code class="ruby">      format.html # index.html.erb</code>
-        </li>
-      
-        <li class="covered" data-hits="8" data-linenumber="9">
-          <span class="hits">8</span>
-          
-          <code class="ruby">      format.json { render json: @restaurants }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    @restaurants = Restaurant.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
@@ -1818,559 +1818,181 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="8" data-linenumber="13">
+          <span class="hits">8</span>
           
-          <code class="ruby">  def search</code>
+          <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="14">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="14">
+          <span class="hits">8</span>
           
-          <code class="ruby">    @address = params[:place][&#39;address&#39;]</code>
+          <code class="ruby">      format.html # index.html.erb</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="covered" data-hits="8" data-linenumber="15">
+          <span class="hits">8</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      format.json { render json: @restaurants }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">    # set default address</code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="17">
-          <span class="hits">5</span>
+        <li class="never" data-hits="" data-linenumber="17">
           
-          <code class="ruby">    if @address.length == 0</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="18">
           
-          <code class="ruby">      flash[:warning] = &quot;Invalid input. Please type in an address&quot;</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">      redirect_to restaurants_path</code>
+          <code class="ruby">  def search</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="5" data-linenumber="20">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby">    else</code>
+          <code class="ruby">    @address = params[:place][&#39;address&#39;]</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="21">
-          <span class="hits">4</span>
+        <li class="never" data-hits="" data-linenumber="21">
           
-          <code class="ruby">      parameters = {  limit: 10,</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">                      term: &#39;restaurants, food&#39;,</code>
+          <code class="ruby">    # set default address</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="covered" data-hits="5" data-linenumber="23">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby">                      sort: 2,</code>
+          <code class="ruby">    if @address.length == 0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">                      radius_filter: 1600</code>
+          <code class="ruby">      flash[:warning] = &quot;Invalid input. Please type in an address&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">                   }</code>
+          <code class="ruby">      redirect_to restaurants_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    else</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="27">
           <span class="hits">4</span>
           
-          <code class="ruby">      locale = { cc: &#39;US&#39; }</code>
+          <code class="ruby">      parameters = {  limit: 10,</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="28">
-          <span class="hits">4</span>
+        <li class="never" data-hits="" data-linenumber="28">
           
-          <code class="ruby">      @results = Yelp.client.search(@address, parameters, locale)</code>
+          
+          <code class="ruby">                      term: &#39;restaurants, food&#39;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">      # if @results.error</code>
+          <code class="ruby">                      sort: 2,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">      #   redirect_to restaurants_path</code>
+          <code class="ruby">                      radius_filter: 1600</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">      # end</code>
+          <code class="ruby">                   }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="covered" data-hits="4" data-linenumber="33">
+          <span class="hits">4</span>
           
+          <code class="ruby">      locale = { cc: &#39;US&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="34">
+          <span class="hits">4</span>
           
-          <code class="ruby">  # GET /restaurants/1</code>
+          <code class="ruby">      begin</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="35">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        @results = Yelp.client.search(@address, parameters, locale)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby">  # GET /restaurants/1.json</code>
+          <code class="ruby">      rescue</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="37">
           
-          <code class="ruby">  def show</code>
+          
+          <code class="ruby">        redirect_to restaurants_path</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="38">
           
           
-          <code class="ruby">    @restaurant = Restaurant.find(params[:id])</code>
+          <code class="ruby">        flash[:warning] = &quot;Please input a valid address&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="40">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="41">
-          
-          
-          <code class="ruby">      format.html # show.html.erb</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="42">
-          
-          
-          <code class="ruby">      format.json { render json: @restaurant }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
-          
-          
-          <code class="ruby">  # GET /restaurants/new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">  # GET /restaurants/new.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def new</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="49">
-          
-          
-          <code class="ruby">    @restaurant = Restaurant.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="51">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="52">
-          
-          
-          <code class="ruby">      format.html # new.html.erb</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="53">
-          
-          
-          <code class="ruby">      format.json { render json: @restaurant }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby">  # GET /restaurants/1/edit</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def edit</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
-          
-          <code class="ruby">    @restaurant = Restaurant.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby">  # POST /restaurants</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
-          <code class="ruby">  # POST /restaurants.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def create</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="65">
-          
-          
-          <code class="ruby">    @restaurant = Restaurant.new(params[:restaurant])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="66">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="67">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="68">
-          
-          
-          <code class="ruby">      if @restaurant.save</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="69">
-          
-          
-          <code class="ruby">        format.html { redirect_to @restaurant, notice: &#39;Restaurant was successfully created.&#39; }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="70">
-          
-          
-          <code class="ruby">        format.json { render json: @restaurant, status: :created, location: @restaurant }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="71">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="72">
-          
-          
-          <code class="ruby">        format.html { render action: &quot;new&quot; }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="73">
-          
-          
-          <code class="ruby">        format.json { render json: @restaurant.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="74">
-          
-          
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="78">
-          
-          
-          <code class="ruby">  # PUT /restaurants/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="79">
-          
-          
-          <code class="ruby">  # PUT /restaurants/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="80">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def update</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="81">
-          
-          
-          <code class="ruby">    @restaurant = Restaurant.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="82">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="83">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="84">
-          
-          
-          <code class="ruby">      if @restaurant.update_attributes(params[:restaurant])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="85">
-          
-          
-          <code class="ruby">        format.html { redirect_to @restaurant, notice: &#39;Restaurant was successfully updated.&#39; }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="86">
-          
-          
-          <code class="ruby">        format.json { head :no_content }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="87">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="88">
-          
-          
-          <code class="ruby">        format.html { render action: &quot;edit&quot; }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="89">
-          
-          
-          <code class="ruby">        format.json { render json: @restaurant.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="90">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="91">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="92">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="93">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="94">
-          
-          
-          <code class="ruby">  # DELETE /restaurants/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="95">
-          
-          
-          <code class="ruby">  # DELETE /restaurants/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="96">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def destroy</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="97">
-          
-          
-          <code class="ruby">    @restaurant = Restaurant.find(params[:id])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="98">
-          
-          
-          <code class="ruby">    @restaurant.destroy</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="99">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="100">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="101">
-          
-          
-          <code class="ruby">      format.html { redirect_to restaurants_url }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="102">
-          
-          
-          <code class="ruby">      format.json { head :no_content }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="103">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="104">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="105">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">end</code>
@@ -2383,11 +2005,11 @@
         <div class="source_table" id="30a671d49cdb9ff99baca52674e762f31ec2ea6b">
   <div class="header">
     <h3>app/controllers/what2eat_homepages_controller.rb</h3>
-    <h4><span class="red">30.0 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>40</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>28</b> lines missed.</span>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -2412,481 +2034,7 @@
           <code class="ruby">  # GET /what2eat_homepages.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def index</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="5">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    @what2eat_homepages = What2eatHomepage.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      format.html # index.html.erb</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="9">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      format.json { render json: @what2eat_homepages }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">  # GET /what2eat_homepages/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">  # GET /what2eat_homepages/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def show</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
-          
-          <code class="ruby">    @what2eat_homepage = What2eatHomepage.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="19">
-          
-          
-          <code class="ruby">      format.html # show.html.erb</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="20">
-          
-          
-          <code class="ruby">      format.json { render json: @what2eat_homepage }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">  # GET /what2eat_homepages/new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">  # GET /what2eat_homepages/new.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def new</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="27">
-          
-          
-          <code class="ruby">    @what2eat_homepage = What2eatHomepage.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="29">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
-          
-          <code class="ruby">      format.html # new.html.erb</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
-          
-          <code class="ruby">      format.json { render json: @what2eat_homepage }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">  # GET /what2eat_homepages/1/edit</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def edit</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="37">
-          
-          
-          <code class="ruby">    @what2eat_homepage = What2eatHomepage.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby">  # POST /what2eat_homepages</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby">  # POST /what2eat_homepages.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def create</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
-          
-          <code class="ruby">    @what2eat_homepage = What2eatHomepage.new(params[:what2eat_homepage])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="45">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="46">
-          
-          
-          <code class="ruby">      if @what2eat_homepage.save</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="47">
-          
-          
-          <code class="ruby">        format.html { redirect_to @what2eat_homepage, notice: &#39;What2eat homepage was successfully created.&#39; }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
-          
-          <code class="ruby">        format.json { render json: @what2eat_homepage, status: :created, location: @what2eat_homepage }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="50">
-          
-          
-          <code class="ruby">        format.html { render action: &quot;new&quot; }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="51">
-          
-          
-          <code class="ruby">        format.json { render json: @what2eat_homepage.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">  # PUT /what2eat_homepages/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby">  # PUT /what2eat_homepages/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def update</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
-          
-          <code class="ruby">    @what2eat_homepage = What2eatHomepage.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="62">
-          
-          
-          <code class="ruby">      if @what2eat_homepage.update_attributes(params[:what2eat_homepage])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="63">
-          
-          
-          <code class="ruby">        format.html { redirect_to @what2eat_homepage, notice: &#39;What2eat homepage was successfully updated.&#39; }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="64">
-          
-          
-          <code class="ruby">        format.json { head :no_content }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="66">
-          
-          
-          <code class="ruby">        format.html { render action: &quot;edit&quot; }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="67">
-          
-          
-          <code class="ruby">        format.json { render json: @what2eat_homepage.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="68">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="69">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="70">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="71">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="72">
-          
-          
-          <code class="ruby">  # DELETE /what2eat_homepages/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="73">
-          
-          
-          <code class="ruby">  # DELETE /what2eat_homepages/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="74">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def destroy</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="75">
-          
-          
-          <code class="ruby">    @what2eat_homepage = What2eatHomepage.find(params[:id])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="76">
-          
-          
-          <code class="ruby">    @what2eat_homepage.destroy</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="77">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="78">
-          
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="79">
-          
-          
-          <code class="ruby">      format.html { redirect_to what2eat_homepages_url }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="80">
-          
-          
-          <code class="ruby">      format.json { head :no_content }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="81">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="82">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">end</code>
