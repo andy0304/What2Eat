@@ -18,6 +18,7 @@ What2eat::Application.routes.draw do
   # update 'foods' => 'food#search'
 
 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
