@@ -51,13 +51,12 @@ Then(/^I can see a list of recommended restaurants which are within (\d+) mile o
 end
 
 When(/^I type in a location that is not valid$/) do
-  fill_in 'Address', :with => '9937 walnut street'
+  fill_in 'Address', :with => 'ascdsvaw dsfwafcdsaf'
   click_button('Search')
 end
 
 Then(/^I should see an error information telling me no results$/) do
-  assert page.has_content?('9937 walnut street')
-  assert page.has_content?('Address invalid, no results found')
+  assert page.has_content?('Invalid')
 end
 
 When(/^I don’t type in any location$/) do

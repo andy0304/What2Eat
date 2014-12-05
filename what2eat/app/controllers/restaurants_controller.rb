@@ -34,8 +34,8 @@ class RestaurantsController < ApplicationController
       begin
         @results = Yelp.client.search(@address, parameters, locale)
       rescue
+        flash[:warning] = "Invalid address. Please type in an valid address"
         redirect_to restaurants_path
-        flash[:warning] = "Please input a valid address"
       end
     end
   end
