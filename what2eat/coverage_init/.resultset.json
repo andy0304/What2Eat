@@ -1,14 +1,14 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/andy/CIT597/What2Eat/what2eat/config/environment.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/application.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/application.rb": [
         1,
         null,
         1,
@@ -72,7 +72,7 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/boot.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/boot.rb": [
         1,
         null,
         null,
@@ -80,7 +80,7 @@
         null,
         1
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/environments/test.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/environments/test.rb": [
         1,
         null,
         null,
@@ -119,7 +119,7 @@
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/initializers/backtrace_silencers.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -128,7 +128,7 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/initializers/inflections.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -145,14 +145,14 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/initializers/mime_types.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/initializers/recipe_data_fill.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/initializers/recipe_data_fill.rb": [
         1,
         null,
         1,
@@ -179,7 +179,7 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/models/recipe.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/models/recipe.rb": [
         1,
         1,
         null,
@@ -190,7 +190,7 @@
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/initializers/secret_token.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -199,7 +199,7 @@
         null,
         1
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/initializers/session_store.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -209,7 +209,7 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/initializers/wrap_parameters.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -225,7 +225,7 @@
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/initializers/yelp.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/initializers/yelp.rb": [
         1,
         null,
         1,
@@ -237,32 +237,32 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/controllers/application_controller.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/helpers/application_helper.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/helpers/foods_helper.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/helpers/foods_helper.rb": [
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/helpers/recipes_helper.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/helpers/recipes_helper.rb": [
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/helpers/restaurants_helper.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/helpers/restaurants_helper.rb": [
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/helpers/what2eat_homepages_helper.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/helpers/what2eat_homepages_helper.rb": [
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/controllers/foods_controller.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/controllers/foods_controller.rb": [
         null,
         null,
         1,
@@ -394,7 +394,7 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/models/food.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/models/food.rb": [
         1,
         1,
         null,
@@ -403,7 +403,7 @@
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/controllers/recipes_controller.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/controllers/recipes_controller.rb": [
         1,
         null,
         1,
@@ -494,22 +494,16 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/controllers/restaurants_controller.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/controllers/restaurants_controller.rb": [
         1,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
-        9,
+        8,
         null,
-        9,
-        9,
-        9,
+        8,
+        8,
+        8,
         null,
         null,
         null,
@@ -529,10 +523,8 @@
         null,
         4,
         4,
-        4,
         null,
-        1,
-        1,
+        null,
         null,
         null,
         null,
@@ -609,7 +601,7 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/models/restaurant.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/models/restaurant.rb": [
         1,
         1,
         null,
@@ -617,7 +609,7 @@
         1,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/controllers/what2eat_homepages_controller.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/controllers/what2eat_homepages_controller.rb": [
         1,
         null,
         null,
@@ -702,12 +694,12 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/app/models/what2eat_homepage.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/models/what2eat_homepage.rb": [
         1,
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/config/routes.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/config/routes.rb": [
         1,
         null,
         1,
@@ -786,7 +778,7 @@
         null,
         null
       ],
-      "/home/andy/CIT597/What2Eat/what2eat/features/step_definitions/steps.rb": [
+      "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/features/step_definitions/steps.rb": [
         1,
         3,
         null,
@@ -844,6 +836,7 @@
         1,
         null,
         null,
+        1,
         1,
         1,
         null,
@@ -961,6 +954,6 @@
         null
       ]
     },
-    "timestamp": 1417814341
+    "timestamp": 1417803109
   }
 }
