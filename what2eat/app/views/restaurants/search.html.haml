@@ -22,7 +22,7 @@
 			%td= restaurant.rating
 			%td= restaurant.location.display_address
 			/ %td= restaurant.display_phone
-			%td= link_to "details", restaurant.url
+			%td= link_to "details", restaurant.url, :target => "_blank" 
 
 
 = link_to "Back", restaurants_path, :method => :get, class: "btn btn-xs edituser"

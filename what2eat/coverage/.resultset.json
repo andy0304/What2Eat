@@ -356,6 +356,43 @@
         null,
         null,
         null,
+<<<<<<< HEAD
+=======
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+>>>>>>> b79dad26184d49ec107c4d6164941bad6b4b1ed9
         null,
         null,
         null,
@@ -417,6 +454,7 @@
         0,
         null,
         null,
+<<<<<<< HEAD
         null,
         null,
         null,
@@ -492,12 +530,15 @@
         0,
         null,
         null,
+=======
+>>>>>>> b79dad26184d49ec107c4d6164941bad6b4b1ed9
         null
       ],
       "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/controllers/restaurants_controller.rb": [
         1,
         null,
         null,
+<<<<<<< HEAD
         null,
         null,
         null,
@@ -550,6 +591,8 @@
         1,
         null,
         null,
+=======
+>>>>>>> b79dad26184d49ec107c4d6164941bad6b4b1ed9
         null
       ],
       "/Users/chunxiaomu/Documents/repositories/What2Eat/what2eat/app/models/what2eat_homepage.rb": [
@@ -575,6 +618,7 @@
         1,
         1,
         1,
+        null,
         null,
         null,
         null,
@@ -811,6 +855,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1417815126
+=======
+    "timestamp": 1417819372
+>>>>>>> b79dad26184d49ec107c4d6164941bad6b4b1ed9
   }
 }
