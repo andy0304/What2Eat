@@ -1,14 +1,32 @@
 !!!
 %html
   %head
-    %title "HAML'd"
+    %title "What2Eat"
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    %title= content_for?(:title) ? yield(:title) : "App_Name"
+    %meta{:content => content_for?(:description) ? yield(:description) : "App_Name", :name => "description"}
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
+    %header.navbar.navbar-fixed-top.navbar-inverse
+      / %nav.navbar-inner
+      / .container
+      /   %span.icon-bar
+      /   %span.icon-bar
+      /   %span.icon-bar
+      %a.brand{:href => "/"} What2Eat
+      %ul.nav.navbar-nav
+        %li
+          %a{href: "#"} Cook At Home
+        %li
+          %a{href: "#"} Eat Out
+      
     -# this goes just inside %body
     - if flash[:notice]
-      #notice.message= flash[:notice]
+      / #notice.message= flash[:notice]
+      = render 'layouts/messages'
     -elsif flash[:warning]
-      #warning.message= flash[:warning]
+      / #warning.message= flash[:warning]
+      = render 'layouts/messages'
     = yield
