@@ -1,6 +1,12 @@
 class RestaurantsController < ApplicationController
+  # rescue_from RestaurantsController::UNAVAILABLE_FOR_LOCATION, with: :unavailable_location
   # GET /restaurants
   # GET /restaurants.json
+  # def unavailable_location
+  #     render plain: "404 Not Found", status: 404
+  # end
+
+
   def index
     @restaurants = Restaurant.all
 
@@ -25,10 +31,12 @@ class RestaurantsController < ApplicationController
                    }
 
       locale = { cc: 'US' }
-      @results = Yelp.client.search(@address, parameters, locale)
-      # if @results.error
-      #   redirect_to restaurants_path
-      # end
+      begin
+        @results = Yelp.client.search(@address, parameters, locale)
+      rescue
+        redirect_to restaurants_path
+        flash[:warning] = "Please input a valid address"
+      end
     end
   end
 
