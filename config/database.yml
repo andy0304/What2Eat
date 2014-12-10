@@ -20,12 +20,19 @@ test: &test
 
 production:
   adapter: postgresql
-  database: db/production.sqlite3
+  # database: db/production.sqlite3
+  # encoding: unicode
+  # pool: 5
+  # timeout: 5000
+  # username: tommu180@gmail.com
+  # password: Landrover1990
+
+  # adapter: postgresql
   encoding: unicode
+  database: what2eat_production
   pool: 5
-  timeout: 5000
-  username: tommu180@gmail.com
-  password: Landrover1990
+  username: what2eat
+  password: 123456
 
 cucumber:
   <<: *test
