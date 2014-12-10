@@ -41,8 +41,7 @@ end
 gem 'jquery-rails'
 gem 'yelp'
 gem 'haml'
-source :rubygems
-gem 'fatsecret-api' , :source => 'http://rubygems.org/'
+gem 'fatsecret-api'
 
 
 # To use ActiveModel has_secure_password
