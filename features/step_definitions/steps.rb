@@ -123,15 +123,13 @@ Given(/^I'm the recipes search results page$/) do
 end
 
 When(/^I click a specific recipe$/) do
-  # click_link('Apple Strudel')
-  # first(:link, 'Southwest Chicken').click
-  # find("a[href='/recipes/340']").click
-  find(:xpath, "//tr/td[1]/*").click
-  # save_and_open_page
+  find(:xpath, "//tr[1]/td[1]/*").click
+  save_and_open_page
 end
 
 Then(/^I should see the detailed instructions of the recipe$/) do
   assert page.has_content?('Recipe Detail')
+  assert page.has_content?('Cooking Instruction') 
 end
 
 When(/^I click the back button$/) do
@@ -158,14 +156,7 @@ Then(/^I can type in a new address$/) do
   assert page.has_content?('Back')
 end
 
-When(/^I click a preferred restaurant$/) do
-  # save_and_open_page
-  first(:link, 'details').click
-end
 
-Then(/^I can see the details information of this restaurant on the Yelp website$/) do
-  assert page.has_content?('Yelp')
-end
 
 
 
