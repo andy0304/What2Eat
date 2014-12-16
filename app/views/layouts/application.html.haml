@@ -6,6 +6,7 @@
     %title= content_for?(:title) ? yield(:title) : "App_Name"
     %meta{:content => content_for?(:description) ? yield(:description) : "App_Name", :name => "description"}
     = stylesheet_link_tag    "application"
+    / = stylesheet_link_tag    "../../../public/css/style"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
@@ -18,9 +19,9 @@
       %a.brand{:href => "/"} What2Eat
       %ul.nav.navbar-nav
         %li
-          %a{href: "#"} Choose to Cook At Home
+          %a{href: "/../foods"} Choose to Cook At Home
         %li
-          %a{href: "#"} Choose to Eat Out
+          %a{href: "/../restaurants"} Choose to Eat Out
       
     -# this goes just inside %body
     - if flash[:notice]

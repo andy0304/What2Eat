@@ -1,5 +1,6 @@
 %h1 Search Food and Recipes
 
+
 %table
   %thead
 
@@ -12,9 +13,19 @@
 = form_tag foods_path, :method => :post do
   = label :recipe, :ingre, 'Calories Needed'
   = text_field :recipe, :ingre
-  = submit_tag 'Search for Recipe'
+  = submit_tag 'Search for Recipe', class: "btn btn-xs edituser"
 
-= link_to "Back", what2eat_homepages_path, :method => :get, class: "btn btn-xs edituser"
+  = link_to "Back", what2eat_homepages_path, :method => :get, class: "btn btn-xs edituser"
+
+/ %table
+/   %thead
+/     %tr
+/       %th = form_tag foods_path, :method => :post do
+/             = label :recipe, :ingre, 'Calories Needed'
+/             = text_field :recipe, :ingre
+/             = submit_tag 'Search for Recipe'
+/       %th = link_to "Back", what2eat_homepages_path, :method => :get, class: "btn btn-xs edituser"
+
 %table
   %thead
     %tr

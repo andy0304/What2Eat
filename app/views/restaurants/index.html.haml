@@ -3,8 +3,8 @@
 = form_tag restaurants_path, :method => :post do
   = label :place, :address, 'Address'
   = text_field :place, :address
-  = submit_tag 'Search'
+  = submit_tag 'Search',  class: "btn btn-xs edituser"
 
-= link_to "Back", what2eat_homepages_path, :method => :get, class: "btn btn-xs edituser"
+  = link_to "Back", what2eat_homepages_path, :method => :get, class: "btn btn-xs edituser"
   
   

@@ -2,47 +2,32 @@
 
 %h2= @recipe.rname
 
-%p= @recipe.rcalorie
+/ %p= @recipe.rcalorie
 
 - if @image_link != nil
-	%h2= image_tag(@image_link['recipe_image'])
-
-
+	- image_important = @image_link['recipe_image']
+	
 / %h2= @description
-%h2 Cooking Instruction
-
+/ %h2 Cooking Instruction
+-str = ""
+-span = @description["direction"].size + 1
 -@description["direction"].each do |dir|
-	%p= dir["direction_description"]
+	-str += dir["direction_description"]
+	-str += "\n"
 
-/ <p id="notice"><%= notice %></p>
+%table.table.table-striped
+	%thead
+		%tr
+			%th= @recipe.rname
+			%th Cooking Instruction
 
-/ <p>
-/   <b>Rid:</b>
-/   <%= @recipe.rid %>
-/ </p>
-
-/ <p>
-/   <b>Rname:</b>
-/   <%= @recipe.rname %>
-/ </p>
-
-/ <p>
-/   <b>Rcalorie:</b>
-/   <%= @recipe.rcalorie %>
-/ </p>
-
-/ <p>
-/   <b>Rrating:</b>
-/   <%= @recipe.rrating %>
-/ </p>
-
-/ <p>
-/   <b>Rcategory:</b>
-/   <%= @recipe.rcategory %>
-/ </p>
-
-
-
+	%tbody
+		%tr
+			%td{:rowspan => "#{span}"}= image_tag(image_important)
+			%td
+				-@description["direction"].each do |dir|
+					%tr
+						%td= dir["direction_description"]
 
 / <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 
