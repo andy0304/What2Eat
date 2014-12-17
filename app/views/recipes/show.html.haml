@@ -2,36 +2,38 @@
 
 %h2= @recipe.rname
 
-- if @image_link != nil
-	%h2= image_tag(@image_link['recipe_image'])
+/ - if @image_link != nil
+/ 	%h2= image_tag(@image_link['recipe_image'])
 
-%h2 Cooking Instruction
--@description["direction"].each do |dir|
-	%p= dir["direction_description"]
+/ %h2 Cooking Instruction
+/ -@description["direction"].each do |dir|
+/ 	%p= dir["direction_description"]
 
 / %p= @recipe.rcalorie
 
-/ - if @image_link != nil
-/ 	- image_important = @image_link['recipe_image']
+- if @image_link != nil
+	- image_important = @image_link['recipe_image']
+- else 
+	- image_important = "http://www.changefood.org/wp-content/uploads/2013/09/feel-healthier-bodymind-fresh-food-better-than-canned_32-150x150.jpg"
 
-/ -str = ""
-/ -span = @description["direction"].size + 1
-/ -@description["direction"].each do |dir|
-/ 	-str += dir["direction_description"]
-/ 	-str += "\n"
+-str = ""
+-span = @description["direction"].size + 1
+-@description["direction"].each do |dir|
+	-str += dir["direction_description"]
+	-str += "\n"
 
-/ %table.table.table-striped
-/ 	%thead
-/ 		%tr
-/ 			%th= @recipe.rname
-/ 			%th Cooking Instruction
+%table.table.table-striped
+	%thead
+		%tr
+			%th= @recipe.rname
+			%th Cooking Instruction
 
-/ 	%tbody
-/ 		%tr
-/ 			%td{:rowspan => "#{span}"}= image_tag(image_important)
-/ 			%td
-/ 				-@description["direction"].each do |dir|
-/ 					%tr
-/ 						%td= dir["direction_description"]
+	%tbody
+		%tr
+			%td{:rowspan => "#{span}"}= image_tag(image_important)
+			%td
+				-@description["direction"].each do |dir|
+					%tr
+						%td= dir["direction_description"]
 
 =link_to_function "Back", "history.back()", class: "btn btn-xs edituser"
