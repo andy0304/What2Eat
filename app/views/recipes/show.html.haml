@@ -2,42 +2,36 @@
 
 %h2= @recipe.rname
 
+- if @image_link != nil
+	%h2= image_tag(@image_link['recipe_image'])
+
+%h2 Cooking Instruction
+-@description["direction"].each do |dir|
+	%p= dir["direction_description"]
+
 / %p= @recipe.rcalorie
 
-- if @image_link != nil
-	- image_important = @image_link['recipe_image']
-	
-/ %h2= @description
-/ %h2 Cooking Instruction
--str = ""
--span = @description["direction"].size + 1
--@description["direction"].each do |dir|
-	-str += dir["direction_description"]
-	-str += "\n"
+/ - if @image_link != nil
+/ 	- image_important = @image_link['recipe_image']
 
-%table.table.table-striped
-	%thead
-		%tr
-			%th= @recipe.rname
-			%th Cooking Instruction
+/ -str = ""
+/ -span = @description["direction"].size + 1
+/ -@description["direction"].each do |dir|
+/ 	-str += dir["direction_description"]
+/ 	-str += "\n"
 
-	%tbody
-		%tr
-			%td{:rowspan => "#{span}"}= image_tag(image_important)
-			%td
-				-@description["direction"].each do |dir|
-					%tr
-						%td= dir["direction_description"]
+/ %table.table.table-striped
+/ 	%thead
+/ 		%tr
+/ 			%th= @recipe.rname
+/ 			%th Cooking Instruction
 
-/ <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+/ 	%tbody
+/ 		%tr
+/ 			%td{:rowspan => "#{span}"}= image_tag(image_important)
+/ 			%td
+/ 				-@description["direction"].each do |dir|
+/ 					%tr
+/ 						%td= dir["direction_description"]
 
 =link_to_function "Back", "history.back()", class: "btn btn-xs edituser"
-/ =link_to 'All recipes', recipes_path, class: "btn btn-xs edituser"
-/ =link_to 'Back', foods_path
-/ =link_to 'Back', url_for(:back)
-
-
-
-
-
-
