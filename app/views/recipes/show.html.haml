@@ -2,13 +2,20 @@
 
 %h2= @recipe.rname
 
+/ - if @image_link != nil
+/ 	%h2= image_tag(@image_link['recipe_image'])
+
+/ %h2 Cooking Instruction
+/ -@description["direction"].each do |dir|
+/ 	%p= dir["direction_description"]
+
 / %p= @recipe.rcalorie
 
 - if @image_link != nil
 	- image_important = @image_link['recipe_image']
-	
-/ %h2= @description
-/ %h2 Cooking Instruction
+- else 
+	- image_important = "http://www.changefood.org/wp-content/uploads/2013/09/feel-healthier-bodymind-fresh-food-better-than-canned_32-150x150.jpg"
+
 -str = ""
 -span = @description["direction"].size + 1
 -@description["direction"].each do |dir|
@@ -29,15 +36,4 @@
 					%tr
 						%td= dir["direction_description"]
 
-/ <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-
 =link_to_function "Back", "history.back()", class: "btn btn-xs edituser"
-/ =link_to 'All recipes', recipes_path, class: "btn btn-xs edituser"
-/ =link_to 'Back', foods_path
-/ =link_to 'Back', url_for(:back)
-
-
-
-
-
-
